@@ -1,0 +1,1 @@
+# bomba_wybucha-lineToCenter
