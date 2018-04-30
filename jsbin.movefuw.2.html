@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by bialka104b (http://jsbin.com/movefuw/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="lineToCenter">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>cwiczenia funkcji</title>
+</head>
+<body>
+  <canvas id="myCanvas" height="300" width="300" style="border: 1px solid black"></canvas>
+<script id="jsbin-javascript">
+var canvas = document.getElementById('myCanvas');
+var context = canvas.getContext('2d');
+
+function randomNumber (max, min) {
+  var min=1;
+  var max=parseInt(max,10);
+  return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+var x='console.log(randomNumber(300,1)';
+var y='console.log(randomNumber(300,1)';
+function lineToCenter(x,y) {
+  for (i=1;i<=5;i++){
+    context.strokeStyle ='green';
+    context.beginPath();
+    context.moveTo(randomNumber(300,1),randomNumber(300,1));
+    context.lineTo(150,150);
+    context.stroke();
+  }
+    setTimeout(function() {
+    lineToCenter();
+}, 1000);
+  
+}
+console.log(lineToCenter(x,y));
+</script>
+</body>
+</html>
