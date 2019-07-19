@@ -1,3 +1,3 @@
-# bomba_wybucha-lineToCenter
+# The bomb explodes lineToCenter
 
-https://output.jsbin.com/movefuw/2
+https://bialka104b.github.io/bomba_wybucha-lineToCenter/
