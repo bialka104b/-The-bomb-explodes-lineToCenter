@@ -1,3 +1,3 @@
 # The bomb explodes lineToCenter
 
-https://bialka104b.github.io/bomba_wybucha-lineToCenter/
+Preview: https://bialka104b.github.io/The-bomb-explodes-lineToCenter/
