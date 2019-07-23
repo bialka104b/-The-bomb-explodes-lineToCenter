@@ -18,31 +18,29 @@ Released under the MIT license: http://jsbin.mit-license.org
 </head>
 <body>
   <canvas id="myCanvas" height="300" width="300" style="border: 1px solid black"></canvas>
-<script>
-var canvas = document.getElementById('myCanvas');
-var context = canvas.getContext('2d');
+  <script>
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
 
-function randomNumber (max, min) {
-  var min=1;
-  var max=parseInt(max,10);
-  return Math.floor(Math.random()*(max-min+1)+min);
-}
+    function randomNumber (max, min) {
+        var min=1;
+        var max=parseInt(max,10);
+        return Math.floor(Math.random()*(max-min+1)+min);
+    }
 
-var x='console.log(randomNumber(300,1)';
-var y='console.log(randomNumber(300,1)';
-function lineToCenter(x,y) {
-  for (i=1;i<=5;i++){
-    context.strokeStyle ='green';
-    context.beginPath();
-    context.moveTo(randomNumber(300,1),randomNumber(300,1));
-    context.lineTo(150,150);
-    context.stroke();
-  }
-    setTimeout(function() {
-    lineToCenter();
-}, 1000);
-  
-} (lineToCenter(x,y));
+    var x='console.log(randomNumber(300,1)';
+    var y='console.log(randomNumber(300,1)';
+    function lineToCenter(x,y) {
+        for (i=1;i<=5;i++){
+            context.strokeStyle ='green';
+            context.beginPath();
+            context.moveTo(randomNumber(300,1),randomNumber(300,1));
+            context.lineTo(150,150);
+            context.stroke();
+        } setTimeout(function() {
+            lineToCenter();
+        }, 1000);
+    } (lineToCenter(x,y));
 </script>
 </body>
 </html>
